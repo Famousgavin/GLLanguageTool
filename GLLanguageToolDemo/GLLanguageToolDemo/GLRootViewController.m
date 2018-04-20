@@ -92,7 +92,7 @@
         case 0: {
             //多语言配置
             [GLLanguageTool shareInstance].languages = GLLanguageEN|GLLanguageZH_HANS|GLLanguageZH_HANT;
-            //设置默认语言 或者 根据支持的语言设置当前的语言 当前语言不支持默认英语
+            //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 //            [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
         }
             break;
