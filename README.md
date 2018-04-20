@@ -13,7 +13,7 @@
 ## 一、初始化和使用
 初始化在`AppDelegate`导入 `#import <GLLanguageTool.h>`
 ```
-//多语言配置 支持的多语言
+//多语言配置 支持的多语言设置
 [GLLanguageTool shareInstance].languages = GLLanguageEN | GLLanguageZH_HANS | GLLanguageZH_HANT;
 //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
@@ -28,9 +28,7 @@ self.label.text = [@"你的多语言文件key" customLocalizedString];
 ```
 self.label.text = [@"你的多语言文件key" customLocalizedStringFromTable:@"多语言文件名"];
 ```
-<br>
 
-#### 具体使用请点击[GLLanguageTool的详细使用]()
 <br>
 <br>
 
@@ -49,6 +47,8 @@ pod 'GLLanguageTool'
 
 ## 三、更新
 
+<br>
+<br>
 
 ## 四、其它
 为了不影响您项目中导入的其他第三方库，本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您有任何不明白都可以查看Demo。
