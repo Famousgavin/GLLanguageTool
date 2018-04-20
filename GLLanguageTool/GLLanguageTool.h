@@ -18,7 +18,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, GLLanguageOptions) {
+typedef NS_OPTIONS(NSInteger, GLLanguage) {
     /**  英文  */
     GLLanguageEN          = 0x01 << 0,
     /**  简体中文  */
@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, GLLanguageOptions) {
 @interface GLLanguageTool : NSObject
 
 /**  支持的语言 示例：GLLanguageZH_HANT | GLLanguageEN  默认值：GLLanguageEN  */
-@property (nonatomic, assign) GLLanguageOptions languages;
+@property (nonatomic, assign) GLLanguage languages;
 
 
 + (instancetype)shareInstance;

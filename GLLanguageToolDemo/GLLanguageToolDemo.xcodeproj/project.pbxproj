@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8631AD022089FE4A00A1DFA5 /* NSString+GLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631ACFE2089FE4A00A1DFA5 /* NSString+GLLanguage.m */; };
+		8631AD032089FE4A00A1DFA5 /* GLLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631ACFF2089FE4A00A1DFA5 /* GLLanguageTool.m */; };
 		8668C6A12089CF9600C9F1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6A02089CF9600C9F1CA /* AppDelegate.m */; };
 		8668C6A92089CF9600C9F1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6A82089CF9600C9F1CA /* Assets.xcassets */; };
 		8668C6AC2089CF9600C9F1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6AA2089CF9600C9F1CA /* LaunchScreen.storyboard */; };
 		8668C6AF2089CF9600C9F1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6AE2089CF9600C9F1CA /* main.m */; };
-		8668C6C02089D12100C9F1CA /* NSString+GLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */; };
-		8668C6C12089D12100C9F1CA /* GLLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */; };
 		8668C6C42089D1C800C9F1CA /* GLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6C32089D1C800C9F1CA /* GLRootViewController.m */; };
 		8668C6C72089D1D000C9F1CA /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6C62089D1D000C9F1CA /* GLMeViewController.m */; };
 		8668C6C92089D1DC00C9F1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6C82089D1DC00C9F1CA /* Main.storyboard */; };
@@ -24,6 +24,10 @@
 		17A25C513FB42820BAC7609E /* libPods-GLLanguageToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLLanguageToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DC511FFCBF30FCF6F13922 /* Pods-GLLanguageToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLLanguageToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		56B923E4EF1120AD0731D1EC /* Pods-GLLanguageToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLLanguageToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8631ACFE2089FE4A00A1DFA5 /* NSString+GLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GLLanguage.m"; sourceTree = "<group>"; };
+		8631ACFF2089FE4A00A1DFA5 /* GLLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLanguageTool.m; sourceTree = "<group>"; };
+		8631AD002089FE4A00A1DFA5 /* NSString+GLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GLLanguage.h"; sourceTree = "<group>"; };
+		8631AD012089FE4A00A1DFA5 /* GLLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLanguageTool.h; sourceTree = "<group>"; };
 		8668C69C2089CF9600C9F1CA /* GLLanguageToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLLanguageToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8668C69F2089CF9600C9F1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8668C6A02089CF9600C9F1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,10 +35,6 @@
 		8668C6AB2089CF9600C9F1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8668C6AD2089CF9600C9F1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8668C6AE2089CF9600C9F1CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GLLanguage.m"; sourceTree = "<group>"; };
-		8668C6BD2089D12100C9F1CA /* NSString+GLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GLLanguage.h"; sourceTree = "<group>"; };
-		8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLanguageTool.m; sourceTree = "<group>"; };
-		8668C6BF2089D12100C9F1CA /* GLLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLanguageTool.h; sourceTree = "<group>"; };
 		8668C6C22089D1C800C9F1CA /* GLRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRootViewController.h; sourceTree = "<group>"; };
 		8668C6C32089D1C800C9F1CA /* GLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRootViewController.m; sourceTree = "<group>"; };
 		8668C6C52089D1D000C9F1CA /* GLMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMeViewController.h; sourceTree = "<group>"; };
@@ -74,9 +74,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8631ACFD2089FE4A00A1DFA5 /* GLLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				8631AD002089FE4A00A1DFA5 /* NSString+GLLanguage.h */,
+				8631ACFE2089FE4A00A1DFA5 /* NSString+GLLanguage.m */,
+				8631ACFF2089FE4A00A1DFA5 /* GLLanguageTool.m */,
+				8631AD012089FE4A00A1DFA5 /* GLLanguageTool.h */,
+			);
+			name = GLLanguageTool;
+			path = ../GLLanguageTool;
+			sourceTree = "<group>";
+		};
 		8668C6932089CF9600C9F1CA = {
 			isa = PBXGroup;
 			children = (
+				8631ACFD2089FE4A00A1DFA5 /* GLLanguageTool */,
 				8668C69E2089CF9600C9F1CA /* GLLanguageToolDemo */,
 				8668C69D2089CF9600C9F1CA /* Products */,
 				34210979CE63F4A3F8C11940 /* Pods */,
@@ -95,7 +108,6 @@
 		8668C69E2089CF9600C9F1CA /* GLLanguageToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8668C6B52089D00F00C9F1CA /* GLLanguageTool */,
 				8668C69F2089CF9600C9F1CA /* AppDelegate.h */,
 				8668C6A02089CF9600C9F1CA /* AppDelegate.m */,
 				8668C6C22089D1C800C9F1CA /* GLRootViewController.h */,
@@ -110,17 +122,6 @@
 				8668C6AE2089CF9600C9F1CA /* main.m */,
 			);
 			path = GLLanguageToolDemo;
-			sourceTree = "<group>";
-		};
-		8668C6B52089D00F00C9F1CA /* GLLanguageTool */ = {
-			isa = PBXGroup;
-			children = (
-				8668C6BD2089D12100C9F1CA /* NSString+GLLanguage.h */,
-				8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */,
-				8668C6BF2089D12100C9F1CA /* GLLanguageTool.h */,
-				8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */,
-			);
-			path = GLLanguageTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8631AD032089FE4A00A1DFA5 /* GLLanguageTool.m in Sources */,
+				8631AD022089FE4A00A1DFA5 /* NSString+GLLanguage.m in Sources */,
 				8668C6C42089D1C800C9F1CA /* GLRootViewController.m in Sources */,
 				8668C6AF2089CF9600C9F1CA /* main.m in Sources */,
 				8668C6C72089D1D000C9F1CA /* GLMeViewController.m in Sources */,
-				8668C6C02089D12100C9F1CA /* NSString+GLLanguage.m in Sources */,
 				8668C6A12089CF9600C9F1CA /* AppDelegate.m in Sources */,
-				8668C6C12089D12100C9F1CA /* GLLanguageTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
