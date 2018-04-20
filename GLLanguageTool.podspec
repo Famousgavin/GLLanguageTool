@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version       = "1.0.0"
   s.summary       = "最好用的多语言工具、一个方法获取多语言、应用内部切换多语言"
   s.description   = <<-DESC
-                     最好用的多语言工具、一个方法获取多语言、应用内部切换多语言
+                     最好用的多语言工具、一个方法获取多语言、应用内部切换多语言,系统多语言文件读取，支持12国语言切换。
                     DESC
 
   s.homepage      = "https://github.com/Gavin-ldh/GLLanguageTool"
@@ -17,7 +17,5 @@ Pod::Spec.new do |s|
   s.source_files  =  "GLLanguageTool/*.{h,m}"
   s.framework     = "UIKit"
   s.requires_arc  = true
-
-#  s.dependency "MBProgressHUD"
 
 end
