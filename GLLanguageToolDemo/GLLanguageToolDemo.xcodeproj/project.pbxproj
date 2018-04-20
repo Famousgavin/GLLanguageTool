@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8668C6A12089CF9600C9F1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6A02089CF9600C9F1CA /* AppDelegate.m */; };
+		8668C6A92089CF9600C9F1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6A82089CF9600C9F1CA /* Assets.xcassets */; };
+		8668C6AC2089CF9600C9F1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6AA2089CF9600C9F1CA /* LaunchScreen.storyboard */; };
+		8668C6AF2089CF9600C9F1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6AE2089CF9600C9F1CA /* main.m */; };
+		8668C6C02089D12100C9F1CA /* NSString+GLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */; };
+		8668C6C12089D12100C9F1CA /* GLLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */; };
+		8668C6C42089D1C800C9F1CA /* GLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6C32089D1C800C9F1CA /* GLRootViewController.m */; };
+		8668C6C72089D1D000C9F1CA /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6C62089D1D000C9F1CA /* GLMeViewController.m */; };
+		8668C6C92089D1DC00C9F1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6C82089D1DC00C9F1CA /* Main.storyboard */; };
+		8668C6D12089D58200C9F1CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6D32089D58200C9F1CA /* Localizable.strings */; };
+		9B155333C66A18D75EE55F81 /* libPods-GLLanguageToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A25C513FB42820BAC7609E /* libPods-GLLanguageToolDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17A25C513FB42820BAC7609E /* libPods-GLLanguageToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLLanguageToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DC511FFCBF30FCF6F13922 /* Pods-GLLanguageToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLLanguageToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		56B923E4EF1120AD0731D1EC /* Pods-GLLanguageToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLLanguageToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8668C69C2089CF9600C9F1CA /* GLLanguageToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLLanguageToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8668C69F2089CF9600C9F1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8668C6A02089CF9600C9F1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8668C6A82089CF9600C9F1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8668C6AB2089CF9600C9F1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8668C6AD2089CF9600C9F1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8668C6AE2089CF9600C9F1CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GLLanguage.m"; sourceTree = "<group>"; };
+		8668C6BD2089D12100C9F1CA /* NSString+GLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GLLanguage.h"; sourceTree = "<group>"; };
+		8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLanguageTool.m; sourceTree = "<group>"; };
+		8668C6BF2089D12100C9F1CA /* GLLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLanguageTool.h; sourceTree = "<group>"; };
+		8668C6C22089D1C800C9F1CA /* GLRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRootViewController.h; sourceTree = "<group>"; };
+		8668C6C32089D1C800C9F1CA /* GLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRootViewController.m; sourceTree = "<group>"; };
+		8668C6C52089D1D000C9F1CA /* GLMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMeViewController.h; sourceTree = "<group>"; };
+		8668C6C62089D1D000C9F1CA /* GLMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMeViewController.m; sourceTree = "<group>"; };
+		8668C6C82089D1DC00C9F1CA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8668C6D02089D56600C9F1CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8668C6D22089D58200C9F1CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8668C6D42089D58400C9F1CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8668C6992089CF9600C9F1CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B155333C66A18D75EE55F81 /* libPods-GLLanguageToolDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34210979CE63F4A3F8C11940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56B923E4EF1120AD0731D1EC /* Pods-GLLanguageToolDemo.debug.xcconfig */,
+				18DC511FFCBF30FCF6F13922 /* Pods-GLLanguageToolDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44C5D6F98FE00386106209C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17A25C513FB42820BAC7609E /* libPods-GLLanguageToolDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8668C6932089CF9600C9F1CA = {
+			isa = PBXGroup;
+			children = (
+				8668C69E2089CF9600C9F1CA /* GLLanguageToolDemo */,
+				8668C69D2089CF9600C9F1CA /* Products */,
+				34210979CE63F4A3F8C11940 /* Pods */,
+				44C5D6F98FE00386106209C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8668C69D2089CF9600C9F1CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8668C69C2089CF9600C9F1CA /* GLLanguageToolDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8668C69E2089CF9600C9F1CA /* GLLanguageToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8668C6B52089D00F00C9F1CA /* GLLanguageTool */,
+				8668C69F2089CF9600C9F1CA /* AppDelegate.h */,
+				8668C6A02089CF9600C9F1CA /* AppDelegate.m */,
+				8668C6C22089D1C800C9F1CA /* GLRootViewController.h */,
+				8668C6C32089D1C800C9F1CA /* GLRootViewController.m */,
+				8668C6C52089D1D000C9F1CA /* GLMeViewController.h */,
+				8668C6C62089D1D000C9F1CA /* GLMeViewController.m */,
+				8668C6C82089D1DC00C9F1CA /* Main.storyboard */,
+				8668C6D32089D58200C9F1CA /* Localizable.strings */,
+				8668C6A82089CF9600C9F1CA /* Assets.xcassets */,
+				8668C6AA2089CF9600C9F1CA /* LaunchScreen.storyboard */,
+				8668C6AD2089CF9600C9F1CA /* Info.plist */,
+				8668C6AE2089CF9600C9F1CA /* main.m */,
+			);
+			path = GLLanguageToolDemo;
+			sourceTree = "<group>";
+		};
+		8668C6B52089D00F00C9F1CA /* GLLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				8668C6BD2089D12100C9F1CA /* NSString+GLLanguage.h */,
+				8668C6BC2089D12100C9F1CA /* NSString+GLLanguage.m */,
+				8668C6BF2089D12100C9F1CA /* GLLanguageTool.h */,
+				8668C6BE2089D12100C9F1CA /* GLLanguageTool.m */,
+			);
+			path = GLLanguageTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8668C69B2089CF9600C9F1CA /* GLLanguageToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8668C6B22089CF9600C9F1CA /* Build configuration list for PBXNativeTarget "GLLanguageToolDemo" */;
+			buildPhases = (
+				91A4B77E85781B533496FF7D /* [CP] Check Pods Manifest.lock */,
+				8668C6982089CF9600C9F1CA /* Sources */,
+				8668C6992089CF9600C9F1CA /* Frameworks */,
+				8668C69A2089CF9600C9F1CA /* Resources */,
+				E53B26C539BFB0DE81664DAC /* [CP] Embed Pods Frameworks */,
+				93CE58CC3B4CEB1626CAB1E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLLanguageToolDemo;
+			productName = GLLanguageToolDemo;
+			productReference = 8668C69C2089CF9600C9F1CA /* GLLanguageToolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8668C6942089CF9600C9F1CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Gavin Lee";
+				TargetAttributes = {
+					8668C69B2089CF9600C9F1CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8668C6972089CF9600C9F1CA /* Build configuration list for PBXProject "GLLanguageToolDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 8668C6932089CF9600C9F1CA;
+			productRefGroup = 8668C69D2089CF9600C9F1CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8668C69B2089CF9600C9F1CA /* GLLanguageToolDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8668C69A2089CF9600C9F1CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8668C6AC2089CF9600C9F1CA /* LaunchScreen.storyboard in Resources */,
+				8668C6D12089D58200C9F1CA /* Localizable.strings in Resources */,
+				8668C6A92089CF9600C9F1CA /* Assets.xcassets in Resources */,
+				8668C6C92089D1DC00C9F1CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91A4B77E85781B533496FF7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GLLanguageToolDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CE58CC3B4CEB1626CAB1E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53B26C539BFB0DE81664DAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLLanguageToolDemo/Pods-GLLanguageToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8668C6982089CF9600C9F1CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8668C6C42089D1C800C9F1CA /* GLRootViewController.m in Sources */,
+				8668C6AF2089CF9600C9F1CA /* main.m in Sources */,
+				8668C6C72089D1D000C9F1CA /* GLMeViewController.m in Sources */,
+				8668C6C02089D12100C9F1CA /* NSString+GLLanguage.m in Sources */,
+				8668C6A12089CF9600C9F1CA /* AppDelegate.m in Sources */,
+				8668C6C12089D12100C9F1CA /* GLLanguageTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8668C6AA2089CF9600C9F1CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8668C6AB2089CF9600C9F1CA /* Base */,
+				8668C6D02089D56600C9F1CA /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8668C6D32089D58200C9F1CA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8668C6D22089D58200C9F1CA /* en */,
+				8668C6D42089D58400C9F1CA /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8668C6B02089CF9600C9F1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8668C6B12089CF9600C9F1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8668C6B32089CF9600C9F1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B923E4EF1120AD0731D1EC /* Pods-GLLanguageToolDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SMGX398V4;
+				INFOPLIST_FILE = GLLanguageToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gavin.GLLanguageToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8668C6B42089CF9600C9F1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DC511FFCBF30FCF6F13922 /* Pods-GLLanguageToolDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SMGX398V4;
+				INFOPLIST_FILE = GLLanguageToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gavin.GLLanguageToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8668C6972089CF9600C9F1CA /* Build configuration list for PBXProject "GLLanguageToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8668C6B02089CF9600C9F1CA /* Debug */,
+				8668C6B12089CF9600C9F1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8668C6B22089CF9600C9F1CA /* Build configuration list for PBXNativeTarget "GLLanguageToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8668C6B32089CF9600C9F1CA /* Debug */,
+				8668C6B42089CF9600C9F1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8668C6942089CF9600C9F1CA /* Project object */;
+}
