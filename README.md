@@ -21,7 +21,7 @@
 
 <br>
 
-在需要用到的地方 `#import <NSString+GLLanguage.h>`
+在需要使用的地方 `#import <NSString+GLLanguage.h>`
 
 ```
 self.label.text = [@"你的多语言文件key" customLocalizedString];
