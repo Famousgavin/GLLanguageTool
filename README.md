@@ -5,21 +5,19 @@
 ![Platforms](https://img.shields.io/badge/platforms-iOS-orange.svg)
 [![Languages](https://img.shields.io/badge/language-objc-FF69B4.svg?style=plastic)](#)
 
-最好用的多语言工具、一个方法获取多语言、应用内部切换
+最好用的多语言工具、一个方法获取多语言、应用内部切换多语言
 
 
 <br>
 
 ## 一、初始化和使用
-在`AppDelegate`导入 `#import <GLLanguageTool.h>`
+初始化在`AppDelegate`导入 `#import <GLLanguageTool.h>`
 ```
 //多语言配置 支持的多语言
-[GLLanguageTool shareInstance].languages = GLLanguageEN|GLLanguageZH_HANS|GLLanguageZH_HANT;
+[GLLanguageTool shareInstance].languages = GLLanguageEN | GLLanguageZH_HANS | GLLanguageZH_HANT;
 //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
 ```
-
-在需要用到的地方 `#import <NSString+GLLanguage.h>`
 
 <br>
 
@@ -53,7 +51,7 @@ pod 'GLLanguageTool'
 
 
 ## 四、其它
-为了不影响您项目中导入的其他第三方库，本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您有任何不明白都可以查看Demo或者点击[使用详解]()。
+为了不影响您项目中导入的其他第三方库，本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您有任何不明白都可以查看Demo。
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 * 如果您有什么建议可以Issues我，谢谢
 * 后续我会持续更新，为它添加更多的功能，欢迎star :)

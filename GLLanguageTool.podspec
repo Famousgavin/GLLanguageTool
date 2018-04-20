@@ -2,9 +2,9 @@ Pod::Spec.new do |s|
 
   s.name          = "GLLanguageTool"
   s.version       = "1.0.0"
-  s.summary       = "最好用的多语言工具、一个方法获取多语言、应用内部切换"
+  s.summary       = "最好用的多语言工具、一个方法获取多语言、应用内部切换多语言"
   s.description   = <<-DESC
-                     最好用的多语言工具、一个方法获取多语言、应用内部切换
+                     最好用的多语言工具、一个方法获取多语言、应用内部切换多语言
                     DESC
 
   s.homepage      = "https://github.com/Gavin-ldh/GLLanguageTool"
