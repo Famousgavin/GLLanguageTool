@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform      = :ios
   s.ios.deployment_target = "8.0"
   s.source        = { :git => "https://github.com/Gavin-ldh/GLLanguageTool.git", :tag => s.version }
-  s.source_files  =  "GLLanguageTool/*.{h,m}"
+  s.source_files  = "GLLanguageTool", "GLLanguageTool/*.{h,m}"
   s.framework     = "UIKit"
   s.requires_arc  = true
 
