@@ -18,33 +18,33 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSInteger, GLLanguage) {
+typedef NS_OPTIONS(NSInteger, GLLanguageOptions) {
     /**  英文  */
-    GLLanguageEN          = 0x01 << 0,
+    GLLanguageOptionEN          = 0x01 << 0,
     /**  简体中文  */
-    GLLanguageZH_HANS     = 0x01 << 1,
+    GLLanguageOptionZH_HANS     = 0x01 << 1,
     /**  繁体中文  */
-    GLLanguageZH_HANT     = 0x01 << 2,
+    GLLanguageOptionZH_HANT     = 0x01 << 2,
     /**  俄语  */
-    GLLanguageRU          = 0x01 << 3,
+    GLLanguageOptionRU          = 0x01 << 3,
     /**  法语  */
-    GLLanguageFR          = 0x01 << 4,
+    GLLanguageOptionFR          = 0x01 << 4,
     /**  德语  */
-    GLLanguageDE          = 0x01 << 5,
+    GLLanguageOptionDE          = 0x01 << 5,
     /**  意大利  */
-    GLLanguageIT          = 0x01 << 6,
+    GLLanguageOptionIT          = 0x01 << 6,
     /**  西班牙  */
-    GLLanguageES          = 0x01 << 7,
+    GLLanguageOptionES          = 0x01 << 7,
     /**  日语  */
-    GLLanguageJA          = 0x01 << 8,
+    GLLanguageOptionJA          = 0x01 << 8,
     /**  韩语  */
-    GLLanguageKO          = 0x01 << 9,
+    GLLanguageOptionKO          = 0x01 << 9,
 };
 
 @interface GLLanguageTool : NSObject
 
 /**  支持的语言 示例：GLLanguageZH_HANT | GLLanguageEN  默认值：GLLanguageEN  */
-@property (nonatomic, assign) GLLanguage languages;
+@property (nonatomic, assign) GLLanguageOptions languageOptions;
 
 
 + (instancetype)shareInstance;

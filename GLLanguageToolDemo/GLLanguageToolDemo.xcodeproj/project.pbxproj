@@ -77,10 +77,10 @@
 		8631ACFD2089FE4A00A1DFA5 /* GLLanguageTool */ = {
 			isa = PBXGroup;
 			children = (
+				8631AD012089FE4A00A1DFA5 /* GLLanguageTool.h */,
+				8631ACFF2089FE4A00A1DFA5 /* GLLanguageTool.m */,
 				8631AD002089FE4A00A1DFA5 /* NSString+GLLanguage.h */,
 				8631ACFE2089FE4A00A1DFA5 /* NSString+GLLanguage.m */,
-				8631ACFF2089FE4A00A1DFA5 /* GLLanguageTool.m */,
-				8631AD012089FE4A00A1DFA5 /* GLLanguageTool.h */,
 			);
 			name = GLLanguageTool;
 			path = ../GLLanguageTool;

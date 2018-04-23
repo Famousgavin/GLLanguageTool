@@ -30,7 +30,7 @@ static GLLanguageTool *tool = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[GLLanguageTool alloc] init];
-        tool.languages = GLLanguageEN;
+        tool.languageOptions = GLLanguageOptionEN;
     });
     return tool;
 }
@@ -57,34 +57,34 @@ static GLLanguageTool *tool = nil;
 + (NSString *)getCurrentLanguage {
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
-    if ((tool.languages & GLLanguageEN) && [currentLanguage isEqualToString:@"en"]) {
+    if ((tool.languageOptions & GLLanguageOptionEN) && [currentLanguage isEqualToString:@"en"]) {
         //英语 - 默认
         return @"en";
-    }else if ((tool.languages & GLLanguageZH_HANS) && [currentLanguage isEqualToString:@"zh-Hans"]) {
+    }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"zh-Hans"]) {
         //简体中文
         return @"zh-Hans";
-    }else if ((tool.languages & GLLanguageZH_HANS) && [currentLanguage isEqualToString:@"ru"]) {
+    }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"ru"]) {
         //俄语
         return @"ru";
-    } else if ((tool.languages & GLLanguageRU) && [currentLanguage hasPrefix:@"fr"]){
+    } else if ((tool.languageOptions & GLLanguageOptionRU) && [currentLanguage hasPrefix:@"fr"]){
         //法语
         return @"fr";
-    }else if ((tool.languages & GLLanguageZH_HANT) && ([currentLanguage isEqualToString:@"zh-Hant"] || [currentLanguage isEqualToString:@"zh-HK"])) {
+    }else if ((tool.languageOptions & GLLanguageOptionZH_HANT) && ([currentLanguage isEqualToString:@"zh-Hant"] || [currentLanguage isEqualToString:@"zh-HK"])) {
         //繁体中文
         return @"zh-Hant";
-    }else if ((tool.languages & GLLanguageDE) && [currentLanguage hasPrefix:@"de"]) {
+    }else if ((tool.languageOptions & GLLanguageOptionDE) && [currentLanguage hasPrefix:@"de"]) {
         //German 德语
         return @"de";
-    }else if((tool.languages & GLLanguageIT) && [currentLanguage hasPrefix:@"it"]) {
+    }else if((tool.languageOptions & GLLanguageOptionIT) && [currentLanguage hasPrefix:@"it"]) {
         //italian 意大利
         return @"it";
-    }else if((tool.languages & GLLanguageES) && [currentLanguage hasPrefix:@"es"]) {
+    }else if((tool.languageOptions & GLLanguageOptionES) && [currentLanguage hasPrefix:@"es"]) {
         //Spanish 西班牙语
         return @"es";
-    }else if ((tool.languages & GLLanguageJA) && [currentLanguage isEqualToString:@"ja"]) {
+    }else if ((tool.languageOptions & GLLanguageOptionJA) && [currentLanguage isEqualToString:@"ja"]) {
         //日语
         return @"ja";
-    }else if ((tool.languages & GLLanguageKO) && [currentLanguage isEqualToString:@"ko"]) {
+    }else if ((tool.languageOptions & GLLanguageOptionKO) && [currentLanguage isEqualToString:@"ko"]) {
         //韩语
         return @"ko";
     }
