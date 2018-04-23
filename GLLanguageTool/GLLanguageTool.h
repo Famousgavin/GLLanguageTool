@@ -3,7 +3,7 @@
  * 文件名称： GLLanguageTool.h
  * 项目名称： GLAlertToolDemo
  * 作   者： Gavin Li
- * Blog  ： http://www.dhlee.cn
+ * Blog  ： https://www.dhlee.cn
  * GitHub： https://github.com/Gavin-ldh
  * 当前版本： 1.0.0
  * 创建日期： 2018/4/19
