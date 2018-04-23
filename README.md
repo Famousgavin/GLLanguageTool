@@ -5,7 +5,7 @@
 ![Platforms](https://img.shields.io/badge/platforms-iOS-orange.svg)
 [![Languages](https://img.shields.io/badge/language-objc-FF69B4.svg?style=plastic)](#)
 
-最好用的多语言工具、一个方法获取多语言、应用内部切换多语言
+最好用的多语言支持工具、一个方法获取多语言、应用内部切换多语言
 
 
 <br>
