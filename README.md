@@ -14,7 +14,7 @@
 初始化在`AppDelegate`导入 `#import <GLLanguageTool.h>`
 ```
 //多语言配置 支持的多语言设置
-[GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionJA | GLLanguageOptionKO;
+[GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionKO | GLLanguageOptionJA;
 //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
 ```
