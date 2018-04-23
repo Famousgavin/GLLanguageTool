@@ -21,8 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //多语言配置
-    [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT;
+    //多语言配置 支持的多语言设置
+    [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionJA | GLLanguageOptionKO;
     //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
     [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
     
