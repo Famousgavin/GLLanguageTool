@@ -32,9 +32,13 @@
 
 - (NSString *)localizedStringFromTable:(NSString *)table resource:(NSString *)resource  {
     NSString *localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:@"" table:table];
-    //处理没有开启多语言
+    //处理没有开启多语言 默认优先返回英文
     if (localizedString.length == 0) {
-        return self;
+        if ([resource isEqualToString:@"en"]) {
+            return self;
+        }else{
+            return [self localizedStringFromTable:table resource:@"en"];
+        }
     }
     return localizedString;
 }
