@@ -7,13 +7,15 @@
 
 最好用的多语言支持工具、一个方法获取多语言、应用内部切换多语言。
 
+支持：英文、简体中文、繁体中文、俄语、法语、日语、韩语、德语、意大利语、西班牙语切换。
+
 
 <br>
 
 ## 一、初始化和使用
 初始化在`AppDelegate`导入 `#import <GLLanguageTool.h>`
 ```
-//多语言配置 支持的多语言设置
+//多语言配置 支持的多语言设置 你需要支持哪些就设置哪些
 [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionKO | GLLanguageOptionJA;
 //设置当前语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 [GLLanguageTool setCurrentLanguage:GLLanguageOptionZH_HANS];
