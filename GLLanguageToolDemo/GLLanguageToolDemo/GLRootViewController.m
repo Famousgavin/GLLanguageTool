@@ -46,7 +46,7 @@
     [self gl_init];
     
     
-    self.dataSource = @[@"多语言初始化",
+    self.dataSource = @[@"多语言初始化,请在didFinishLaunchingWithOptions初始化",
                         @"多语言切换-简体中文",
                         @"多语言切换-英文",
                         @"多语言读取",
@@ -93,18 +93,18 @@
             //多语言配置 支持的多语言设置
             [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionJA | GLLanguageOptionKO;
             //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
-//            [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
+//            [GLLanguageTool setCurrentLanguage:GLLanguageOptionZH_HANS];
             
 
         }
             break;
         case 1: {
-            [GLLanguageTool setUserLanguageCode:@"zh-Hans"];
+            [GLLanguageTool setCurrentLanguage:GLLanguageOptionZH_HANS];
             
         }
             break;
         case 2: {
-            [GLLanguageTool setUserLanguageCode:@"en"];
+            [GLLanguageTool setCurrentLanguage:GLLanguageOptionEN];
             
         }
             break;

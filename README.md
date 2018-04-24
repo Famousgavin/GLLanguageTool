@@ -5,7 +5,7 @@
 ![Platforms](https://img.shields.io/badge/platforms-iOS-orange.svg)
 [![Languages](https://img.shields.io/badge/language-objc-FF69B4.svg?style=plastic)](#)
 
-最好用的多语言支持工具、一个方法获取多语言、应用内部切换多语言
+最好用的多语言支持工具、一个方法获取多语言、应用内部切换多语言。
 
 
 <br>
@@ -15,8 +15,8 @@
 ```
 //多语言配置 支持的多语言设置
 [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionKO | GLLanguageOptionJA;
-//设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
-[GLLanguageTool setUserLanguageCode:@"zh-Hans"];
+//设置当前语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
+[GLLanguageTool setCurrentLanguage:GLLanguageOptionZH_HANS];
 ```
 
 <br>

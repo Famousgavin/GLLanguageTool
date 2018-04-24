@@ -19,6 +19,8 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_OPTIONS(NSInteger, GLLanguageOptions) {
+    /**  没有设置  */
+    GLLanguageOptionNone        = 0x00,
     /**  英文  */
     GLLanguageOptionEN          = 0x01 << 0,
     /**  简体中文  */
@@ -49,13 +51,12 @@ typedef NS_OPTIONS(NSInteger, GLLanguageOptions) {
 
 + (instancetype)shareInstance;
 
-/**  写入用户设置当前语言 languageCode：系统语言文件key 如：en、zh-Hans、ru... 默认跟随系统，当前系统语言不支持 默认英语 */
-+ (void)setUserLanguageCode:(NSString *)languageCode;
-/**  获取用户设置语言  */
-+ (NSString *)getUserSettingLanguageCode;
+/**  设置当前语言 language：默认跟随系统，当前系统语言不支持 默认英语 */
++ (void)setCurrentLanguage:(GLLanguageOptions)language;
+/**  获取设置的语言  */
++ (GLLanguageOptions)getSettingLanguage;
 
-/**  获取系统的语言 根据支持的语言过滤 默认英语 */
-+ (NSString *)getCurrentLanguage;
-
+/**  获取设置语言的CODE  */
++ (NSString *)getSettingLanguageCode;
 
 @end

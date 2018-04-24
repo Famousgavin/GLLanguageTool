@@ -36,70 +36,93 @@ static GLLanguageTool *tool = nil;
 }
 
 #pragma mark - Public Methods
-#pragma mark 写入用户设置语言
-+ (void)setUserLanguageCode:(NSString *)languageCode {
-    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:languageCode forKey:kGLLANGUAGE_SETTING_KEY];
++ (void)setCurrentLanguage:(GLLanguageOptions)language {
+    NSAssert(tool.languageOptions&language, @"请设置初始化支持的多语言。。。");
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:language forKey:kGLLANGUAGE_SETTING_KEY];
     [userDefaults synchronize];
 }
-
-#pragma mark 获取用户设置语言
-+ (NSString *)getUserSettingLanguageCode {
-    NSString *language =  [[NSUserDefaults standardUserDefaults] objectForKey:kGLLANGUAGE_SETTING_KEY];
-    if (language.length == 0) {
+/**   获取用户设置的语言  */
++ (GLLanguageOptions)getSettingLanguage {
+    GLLanguageOptions language =  [[NSUserDefaults standardUserDefaults] integerForKey:kGLLANGUAGE_SETTING_KEY];
+    if (language == GLLanguageOptionNone) {
         language = [self getCurrentLanguage];
-        [self setUserLanguageCode:language];
+        [self setCurrentLanguage:language];
     }
     return language;
 }
 
+/**  获取用户设置语言的CODE  */
++ (NSString *)getSettingLanguageCode {
+    GLLanguageOptions language = [self getSettingLanguage];
+    return [self languageKeyWithOption:language];
+}
+
 #pragma mark  获取系统的语言
-+ (NSString *)getCurrentLanguage {
++ (GLLanguageOptions)getCurrentLanguage {
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
     if ((tool.languageOptions & GLLanguageOptionEN) && [currentLanguage isEqualToString:@"en"]) {
         //英语 - 默认
-        return @"en";
+        return GLLanguageOptionEN;
     }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"zh-Hans"]) {
         //简体中文
-        return @"zh-Hans";
-    }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"ru"]) {
+        return GLLanguageOptionZH_HANS;
+    }else if ((tool.languageOptions & GLLanguageOptionRU) && [currentLanguage isEqualToString:@"ru"]) {
         //俄语
-        return @"ru";
-    } else if ((tool.languageOptions & GLLanguageOptionRU) && [currentLanguage hasPrefix:@"fr"]){
+        return GLLanguageOptionRU;
+    } else if ((tool.languageOptions & GLLanguageOptionFR) && [currentLanguage hasPrefix:@"fr"]){
         //法语
-        return @"fr";
+        return GLLanguageOptionFR;
     }else if ((tool.languageOptions & GLLanguageOptionZH_HANT) && ([currentLanguage isEqualToString:@"zh-Hant"] || [currentLanguage isEqualToString:@"zh-HK"])) {
         //繁体中文
-        return @"zh-Hant";
+        return GLLanguageOptionZH_HANT;
     }else if ((tool.languageOptions & GLLanguageOptionDE) && [currentLanguage hasPrefix:@"de"]) {
         //German 德语
-        return @"de";
+        return GLLanguageOptionDE;
     }else if((tool.languageOptions & GLLanguageOptionIT) && [currentLanguage hasPrefix:@"it"]) {
         //italian 意大利
-        return @"it";
+        return GLLanguageOptionIT;
     }else if((tool.languageOptions & GLLanguageOptionES) && [currentLanguage hasPrefix:@"es"]) {
         //Spanish 西班牙语
-        return @"es";
+        return GLLanguageOptionES;
     }else if ((tool.languageOptions & GLLanguageOptionJA) && [currentLanguage isEqualToString:@"ja"]) {
         //日语
-        return @"ja";
+        return GLLanguageOptionJA;
     }else if ((tool.languageOptions & GLLanguageOptionKO) && [currentLanguage isEqualToString:@"ko"]) {
         //韩语
-        return @"ko";
+        return GLLanguageOptionKO;
     }
-//    else if ([[currentLanguage substringToIndex:2] isEqualToString:@"pt"])
-//    {
-//        //葡萄牙-pt （巴西）  pt-PT （葡萄牙）
-//        return @"pt";
-//    }
-    
     //所有不支持默认英文
-    return @"en";
+    return GLLanguageOptionEN;
 }
 
 
 #pragma mark - Private Methods
-
++ (NSString *)languageKeyWithOption:(GLLanguageOptions)language {
+    if (language == GLLanguageOptionEN) {
+        return @"en";
+    }else if (language == GLLanguageOptionZH_HANS) {
+        return @"zh-Hans";
+    }else if (language == GLLanguageOptionRU) {
+        return @"ru";
+    }else if (language == GLLanguageOptionFR) {
+        return @"fr";
+    }else if (language == GLLanguageOptionZH_HANT) {
+        return @"zh-Hant";
+    }else if (language == GLLanguageOptionDE) {
+        return @"de";
+    }else if (language == GLLanguageOptionIT) {
+        return @"it";
+    }else if (language == GLLanguageOptionES) {
+        return @"es";
+    }else if (language == GLLanguageOptionJA) {
+        return @"ja";
+    }else if (language == GLLanguageOptionKO) {
+        return @"ko";
+    }
+    return @"";
+    
+}
 
 @end

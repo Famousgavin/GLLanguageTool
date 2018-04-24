@@ -23,11 +23,11 @@
 @implementation NSString (GLLanguage)
 
 - (NSString *)customLocalizedString {
-    return  [self localizedStringFromTable:nil resource:[GLLanguageTool getUserSettingLanguageCode]];
+    return  [self localizedStringFromTable:nil resource:[GLLanguageTool getSettingLanguageCode]];
 }
 
 - (NSString *)customLocalizedStringFromTable:(NSString *)table {
-    return  [self localizedStringFromTable:table resource:[GLLanguageTool getUserSettingLanguageCode]];
+    return  [self localizedStringFromTable:table resource:[GLLanguageTool getSettingLanguageCode]];
 }
 
 - (NSString *)localizedStringFromTable:(NSString *)table resource:(NSString *)resource  {
