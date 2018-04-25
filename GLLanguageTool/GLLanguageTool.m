@@ -37,7 +37,7 @@ static GLLanguageTool *tool = nil;
 
 #pragma mark - Public Methods
 + (void)setCurrentLanguage:(GLLanguageOptions)language {
-    NSAssert(tool.languageOptions&language, @"请设置初始化支持的多语言。。。");
+    NSAssert(tool.languageOptions&language, @"当前设置的语言不支持或者初始化没有这种语言，请设置初始化支持的多语言。。。");
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:language forKey:kGLLANGUAGE_SETTING_KEY];
     [userDefaults synchronize];

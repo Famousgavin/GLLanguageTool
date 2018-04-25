@@ -1,7 +1,7 @@
 # GLLanguageTool
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com//Gavin-ldh/GLScanner/master/License)
-[![CocoaPods](https://img.shields.io/badge/pod-v1.0.0-28B9FE.svg)](http://cocoapods.org/pods/GLScanner)
+[![CocoaPods](https://img.shields.io/badge/pod-v1.0.2-28B9FE.svg)](http://cocoapods.org/pods/GLScanner)
 ![Platforms](https://img.shields.io/badge/platforms-iOS-orange.svg)
 [![Languages](https://img.shields.io/badge/language-objc-FF69B4.svg?style=plastic)](#)
 
@@ -51,7 +51,7 @@ pod 'GLLanguageTool'
 
 ## 三、更新
 2018.04.20  第一次上传
-2018.04.24  增加没有获取到多语言默认返回英文多语言
+
 <br>
 <br>
 
