@@ -1,14 +1,14 @@
 # GLLanguageTool
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com//Gavin-ldh/GLScanner/master/License)
-[![CocoaPods](https://img.shields.io/badge/pod-v1.0.2-28B9FE.svg)](http://cocoapods.org/pods/GLScanner)
+[![CocoaPods](https://img.shields.io/badge/pod-v1.0.3-28B9FE.svg)](http://cocoapods.org/pods/GLScanner)
 ![Platforms](https://img.shields.io/badge/platforms-iOS-orange.svg)
 [![Languages](https://img.shields.io/badge/language-objc-FF69B4.svg?style=plastic)](#)
 
 最好用的多语言支持工具、一个方法获取多语言、应用内部切换多语言。
-
+```
 支持：英文、简体中文、繁体中文、俄语、法语、日语、韩语、德语、意大利语、西班牙语切换。
-
+```
 
 <br>
 
@@ -50,7 +50,9 @@ pod 'GLLanguageTool'
 <br>
 
 ## 三、更新
+```
 2018.04.20  第一次上传
+```
 
 <br>
 <br>
