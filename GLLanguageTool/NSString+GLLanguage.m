@@ -27,8 +27,12 @@
     return  [self customLocalizedStringFromTable:nil resource:[GLLanguageTool getSettingLanguageCode] bundle:nil];
 }
 
-- (NSString *)customLocalizedStringFromTable:(NSString *)table bundle:(NSBundle *)bundle {
-    return  [self customLocalizedStringFromTable:table resource:[GLLanguageTool getSettingLanguageCode] bundle:bundle];
+- (NSString *)customLocalizedStringFromTable:(NSString *)table {
+    return  [self customLocalizedStringFromTable:table resource:[GLLanguageTool getSettingLanguageCode] bundle:nil];
+}
+
+- (NSString *)customLocalizedStringFromBundle:(NSBundle *)bundle {
+    return  [self customLocalizedStringFromTable:nil resource:[GLLanguageTool getSettingLanguageCode] bundle:bundle];
 }
 
 - (NSString *)customLocalizedStringFromTable:(NSString *)table resource:(NSString *)resource bundle:(NSBundle *)bundle {
