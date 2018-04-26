@@ -24,15 +24,15 @@
 @implementation NSString (GLLanguage)
 
 - (NSString *)customLocalizedString {
-    return  [self localizedStringFromTable:nil resource:[GLLanguageTool getSettingLanguageCode]];
+    return  [self customLocalizedStringFromTable:nil resource:[GLLanguageTool getSettingLanguageCode] bundle:nil];
 }
 
-- (NSString *)customLocalizedStringFromTable:(NSString *)table {
-    return  [self localizedStringFromTable:table resource:[GLLanguageTool getSettingLanguageCode]];
+- (NSString *)customLocalizedStringFromTable:(NSString *)table bundle:(NSBundle *)bundle {
+    return  [self customLocalizedStringFromTable:table resource:[GLLanguageTool getSettingLanguageCode] bundle:bundle];
 }
 
-- (NSString *)localizedStringFromTable:(NSString *)table resource:(NSString *)resource  {
-    NSString *localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:@"" table:table];
+- (NSString *)customLocalizedStringFromTable:(NSString *)table resource:(NSString *)resource bundle:(NSBundle *)bundle {
+    NSString *localizedString = [[NSBundle bundleWithPath:[bundle?:[NSBundle mainBundle] pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:@"" table:table];
     return localizedString?:@"";
 }
 

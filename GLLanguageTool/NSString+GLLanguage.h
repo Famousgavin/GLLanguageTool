@@ -22,8 +22,9 @@
 
 - (NSString *)customLocalizedString;
 
-- (NSString *)customLocalizedStringFromTable:(NSString *)table;
+- (NSString *)customLocalizedStringFromTable:(NSString *)table bundle:(NSBundle *)bundle;
 
-- (NSString *)localizedStringFromTable:(NSString *)table resource:(NSString *)resource;
+- (NSString *)customLocalizedStringFromTable:(NSString *)table resource:(NSString *)resource bundle:(NSBundle *)bundle;
+
 
 @end

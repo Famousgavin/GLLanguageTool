@@ -68,15 +68,15 @@ static GLLanguageTool *tool = nil;
     }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"zh-Hans"]) {
         //简体中文
         return GLLanguageOptionZH_HANS;
+    }else if ((tool.languageOptions & GLLanguageOptionZH_HANT) && ([currentLanguage hasPrefix:@"zh-"])) {
+        //繁体中文 zh-Hant/zh-HK/zh-TW
+        return GLLanguageOptionZH_HANT;
     }else if ((tool.languageOptions & GLLanguageOptionRU) && [currentLanguage isEqualToString:@"ru"]) {
         //俄语
         return GLLanguageOptionRU;
     } else if ((tool.languageOptions & GLLanguageOptionFR) && [currentLanguage hasPrefix:@"fr"]){
         //法语
         return GLLanguageOptionFR;
-    }else if ((tool.languageOptions & GLLanguageOptionZH_HANT) && ([currentLanguage isEqualToString:@"zh-Hant"] || [currentLanguage isEqualToString:@"zh-HK"])) {
-        //繁体中文
-        return GLLanguageOptionZH_HANT;
     }else if ((tool.languageOptions & GLLanguageOptionDE) && [currentLanguage hasPrefix:@"de"]) {
         //German 德语
         return GLLanguageOptionDE;
