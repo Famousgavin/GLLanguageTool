@@ -62,8 +62,8 @@ static GLLanguageTool *tool = nil;
 + (GLLanguageOptions)getCurrentLanguage {
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
-    if ((tool.languageOptions & GLLanguageOptionEN) && [currentLanguage isEqualToString:@"en"]) {
-        //英语 - 默认
+    if ((tool.languageOptions & GLLanguageOptionEN) && [currentLanguage hasPrefix:@"en"]) {
+        //英语
         return GLLanguageOptionEN;
     }else if ((tool.languageOptions & GLLanguageOptionZH_HANS) && [currentLanguage isEqualToString:@"zh-Hans"]) {
         //简体中文

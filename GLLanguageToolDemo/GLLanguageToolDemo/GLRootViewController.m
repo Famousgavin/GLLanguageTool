@@ -90,12 +90,11 @@
     
     switch (indexPath.row) {
         case 0: {
-            //多语言配置 支持的多语言设置
+            //多语言配置 支持的多语言设置 ,请在didFinishLaunchingWithOptions初始化
             [GLLanguageTool shareInstance].languageOptions = GLLanguageOptionEN | GLLanguageOptionZH_HANS | GLLanguageOptionZH_HANT | GLLanguageOptionRU | GLLanguageOptionFR | GLLanguageOptionDE | GLLanguageOptionIT | GLLanguageOptionES | GLLanguageOptionJA | GLLanguageOptionKO;
             //设置默认语言，不设置会根据当前系统语言设置当前的语言，当前语言不支持默认英语
 //            [GLLanguageTool setCurrentLanguage:GLLanguageOptionZH_HANS];
             
-
         }
             break;
         case 1: {

@@ -17,6 +17,7 @@
 		8668C6C72089D1D000C9F1CA /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8668C6C62089D1D000C9F1CA /* GLMeViewController.m */; };
 		8668C6C92089D1DC00C9F1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6C82089D1DC00C9F1CA /* Main.storyboard */; };
 		8668C6D12089D58200C9F1CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8668C6D32089D58200C9F1CA /* Localizable.strings */; };
+		867F73202091B668002E45D4 /* GLAlertTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867F731F2091B668002E45D4 /* GLAlertTool.bundle */; };
 		9B155333C66A18D75EE55F81 /* libPods-GLLanguageToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A25C513FB42820BAC7609E /* libPods-GLLanguageToolDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8668C6D02089D56600C9F1CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8668C6D22089D58200C9F1CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8668C6D42089D58400C9F1CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		867F731F2091B668002E45D4 /* GLAlertTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GLAlertTool.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8668C69F2089CF9600C9F1CA /* AppDelegate.h */,
+				867F731F2091B668002E45D4 /* GLAlertTool.bundle */,
 				8668C6A02089CF9600C9F1CA /* AppDelegate.m */,
 				8668C6C22089D1C800C9F1CA /* GLRootViewController.h */,
 				8668C6C32089D1C800C9F1CA /* GLRootViewController.m */,
@@ -189,6 +192,7 @@
 				8668C6AC2089CF9600C9F1CA /* LaunchScreen.storyboard in Resources */,
 				8668C6D12089D58200C9F1CA /* Localizable.strings in Resources */,
 				8668C6A92089CF9600C9F1CA /* Assets.xcassets in Resources */,
+				867F73202091B668002E45D4 /* GLAlertTool.bundle in Resources */,
 				8668C6C92089D1DC00C9F1CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,7 +32,11 @@
 }
 
 - (NSString *)customLocalizedStringFromTable:(NSString *)table resource:(NSString *)resource bundle:(NSBundle *)bundle {
-    NSString *localizedString = [[NSBundle bundleWithPath:[bundle?:[NSBundle mainBundle] pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:@"" table:table];
+    NSString *localizedString;
+    if (bundle != nil) {
+        localizedString = [[NSBundle bundleWithPath:[bundle pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:@"" table:table];
+    }
+    localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:resource ofType:@"lproj"]] localizedStringForKey:(self) value:localizedString table:table];
     return localizedString?:@"";
 }
 

@@ -1,7 +1,7 @@
 /*********************************************************************
  *
  * 文件名称： Localizable.strings
- * 项目名称： GLLanguageToolDemo
+ * 项目名称： GLAlertToolDemo
  * 作   者： Gavin Li
  * Blog  ： https://www.dhlee.cn
  * GitHub： https://github.com/Gavin-ldh
@@ -16,5 +16,5 @@
  **********************************************************************/
 
 
-"gl_test_1"="Language Test";
-
+"gl_alertPV_1"="Cancel";
+"gl_alertPV_2"="OK";

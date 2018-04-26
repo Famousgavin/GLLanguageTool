@@ -24,7 +24,5 @@
 
 - (NSString *)customLocalizedStringFromTable:(NSString *)table bundle:(NSBundle *)bundle;
 
-- (NSString *)customLocalizedStringFromTable:(NSString *)table resource:(NSString *)resource bundle:(NSBundle *)bundle;
-
 
 @end
